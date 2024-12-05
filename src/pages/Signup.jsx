@@ -1,8 +1,8 @@
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom"; // Import Link
 import { auth } from "../FirebaseConfig";
-import { FiEye,FiEyeOff } from "react-icons/fi";
+import { FiEye, FiEyeOff } from "react-icons/fi";
 
 const Signup = () => {
   const [name, setName] = useState("");
@@ -85,9 +85,9 @@ const Signup = () => {
         </form>
         <p className="mt-6 text-sm text-center text-gray-600">
           Already have an account?{" "}
-          <a href="/login" className="text-orange-600 hover:underline">
+          <Link to="/login" className="text-orange-600 hover:underline">
             Log in here
-          </a>
+          </Link>
         </p>
       </div>
     </div>

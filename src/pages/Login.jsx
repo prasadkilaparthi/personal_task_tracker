@@ -1,8 +1,9 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom"; // Import Link
 import { auth } from "../FirebaseConfig";
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -70,9 +71,9 @@ const Login = () => {
 
         <p className="mt-6 text-sm text-center text-gray-600">
           Don't have an account?{" "}
-          <a href="/signup" className="text-teal-600 hover:underline">
+          <Link to="/signup" className="text-teal-600 hover:underline">
             Sign up here
-          </a>
+          </Link>
         </p>
       </div>
     </div>
