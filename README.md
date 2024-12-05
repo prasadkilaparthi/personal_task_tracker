@@ -55,5 +55,3 @@ Access it here: **[Perso Task Tracker](https://perso-task-tracker.netlify.app/)*
 Vite, with its lightning-fast setup and optimized builds, is the perfect match for modern React applications. It enhances developer productivity while ensuring that the final product is lean and performant.
 
 ---
-
-Feel free to make further tweaks to match your brand or add any additional information about your application. 😊
